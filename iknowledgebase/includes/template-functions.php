@@ -284,7 +284,7 @@ function iknowledgebase_sidebar_location() {
 
 // Prints HTML with meta information for the current post-date/time.
 function iknowledgebase_posted_on() {
-	$time_string = sprintf( esc_html__( '%s ago', 'iknowledgebase' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) );
+	$time_string = sprintf( __( '%s ago', 'iknowledgebase' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) );
 	echo esc_attr( $time_string );
 
 }

@@ -29,6 +29,9 @@ iknowledgebase is distributed under the terms of the GNU GPL
 
 ## Changelog
 
+#### = 1.3.8 =
+* Fixed: minor bugs with translation
+
 #### = 1.3.6 =
 * Fixed: Show private posts in the widget 'Iknowledgebase Current Nav' for users with permission to read_private_posts.
 

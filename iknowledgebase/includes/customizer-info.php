@@ -105,12 +105,12 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
                 <span class="customize-control-title"><?php esc_html_e( 'Pro Version Add-on', 'iknowledgebase' ); ?></span>
 
                 <span class="textfield">
-					<?php printf( esc_html__( 'Purchase the %s Pro Add-on to get additional features and advanced customization options.', 'iknowledgebase' ), 'IKnowledgeBase' ); ?>
+					<?php printf( __( 'Purchase the %s Pro Add-on to get additional features and advanced customization options.', 'iknowledgebase' ), 'IKnowledgeBase' ); ?>
 				</span>
 
                 <p>
                     <a href="https://wow-estore.com/item/iknowledgebase-pro/" target="_blank" class="button button-secondary">
-						<?php printf( esc_html__( 'Learn more about %s Pro', 'iknowledgebase' ), 'IKnowledgeBase' ); ?>
+						<?php printf( __( 'Learn more about %s Pro', 'iknowledgebase' ), 'IKnowledgeBase' ); ?>
                     </a>
                 </p>
 

@@ -16,8 +16,8 @@ function iknowledgebase_theme_info_menu_link() {
 	$theme = wp_get_theme();
 
 	add_theme_page(
-		sprintf( esc_html__( 'Welcome to %1$s %2$s', 'iknowledgebase' ), $theme->display( 'Name' ), $theme->display( 'Version' ) ),
-		esc_html__( 'Theme Info', 'iknowledgebase' ),
+		sprintf( __( 'Welcome to %1$s %2$s', 'iknowledgebase' ), $theme->display( 'Name' ), $theme->display( 'Version' ) ),
+		__( 'Theme Info', 'iknowledgebase' ),
 		'edit_theme_options',
 		'iknowledgebase',
 		'iknowledgebase_theme_info_page'
@@ -38,7 +38,7 @@ function iknowledgebase_theme_info_page() {
 
     <div class="wrap theme-info-wrap">
 
-        <h1><?php printf( esc_html__( 'Welcome to %1$s %2$s', 'iknowledgebase' ), $theme->display( 'Name' ), $theme->display( 'Version' ) ); ?></h1>
+        <h1><?php printf( __( 'Welcome to %1$s %2$s', 'iknowledgebase' ), $theme->display( 'Name' ), $theme->display( 'Version' ) ); ?></h1>
 
         <div class="theme-description"><?php echo esc_html( $theme->display( 'Description' ) ); ?></div>
 
@@ -54,7 +54,7 @@ function iknowledgebase_theme_info_page() {
                 <a href="https://docs.wow-company.com/category/themes/iknowledgebase/" target="_blank">
 		            <?php esc_html_e( 'Theme Documentation', 'iknowledgebase' ); ?>
                 </a>
-                <a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/iknowledgebase/reviews/', 'iknowledgebase' ) ); ?>"
+                <a href="https://wordpress.org/support/theme/iknowledgebase/reviews/"
                    target="_blank"><?php esc_html_e( 'Rate this theme', 'iknowledgebase' ); ?></a>
             </p>
         </div>
@@ -62,7 +62,7 @@ function iknowledgebase_theme_info_page() {
 
         <div id="getting-started">
 
-            <h3><?php printf( esc_html__( 'Getting Started with %s', 'iknowledgebase' ), $theme->display( 'Name' ) ); ?></h3>
+            <h3><?php printf( __( 'Getting Started with %s', 'iknowledgebase' ), $theme->display( 'Name' ) ); ?></h3>
 
             <div class="columns-wrapper clearfix">
 
@@ -77,7 +77,7 @@ function iknowledgebase_theme_info_page() {
                         <p>
                             <a href="https://docs.wow-company.com/category/themes/iknowledgebase/"
                                target="_blank" class="button button-secondary">
-								<?php printf( esc_html__( 'View %s Documentation', 'iknowledgebase' ), 'IKnowledgeBase' ); ?>
+								<?php printf( __( 'View %s Documentation', 'iknowledgebase' ), 'IKnowledgeBase' ); ?>
                             </a>
                         </p>
                     </div>
@@ -86,7 +86,7 @@ function iknowledgebase_theme_info_page() {
                         <h4><?php esc_html_e( 'Theme Options', 'iknowledgebase' ); ?></h4>
 
                         <p class="about">
-							<?php printf( esc_html__( '%s makes use of the Customizer for all theme settings. Click on "Customize Theme" to open the Customizer now.', 'iknowledgebase' ), $theme->display( 'Name' ) ); ?>
+							<?php printf( __( '%s makes use of the Customizer for all theme settings. Click on "Customize Theme" to open the Customizer now.', 'iknowledgebase' ), $theme->display( 'Name' ) ); ?>
                         </p>
                         <p>
                             <a href="<?php echo wp_customize_url(); ?>"
@@ -120,12 +120,12 @@ function iknowledgebase_theme_info_page() {
                         <h4><?php esc_html_e( 'Pro Version Add-on', 'iknowledgebase' ); ?></h4>
 
                         <p class="about">
-							<?php printf( esc_html__( 'Purchase the %s Pro Add-on and get additional features and advanced customization options.', 'iknowledgebase' ), 'iknowledgebase' ); ?>
+							<?php printf( __( 'Purchase the %s Pro Add-on and get additional features and advanced customization options.', 'iknowledgebase' ), 'iknowledgebase' ); ?>
                         </p>
                         <p>
                             <a href=" https://wow-estore.com/item/iknowledgebase-pro/ "
                                target="_blank" class="button button-secondary">
-								<?php printf( esc_html__( 'Learn more about %s Pro', 'iknowledgebase' ), 'IKnowledgeBase' ); ?>
+								<?php printf( __( 'Learn more about %s Pro', 'iknowledgebase' ), 'IKnowledgeBase' ); ?>
                             </a>
                         </p>
                     </div>
@@ -142,7 +142,7 @@ function iknowledgebase_theme_info_page() {
         <div id="theme-author">
 
             <p>
-				<?php printf( esc_html__( '%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)', 'iknowledgebase' ),
+				<?php printf( __( '%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)', 'iknowledgebase' ),
 					$theme->display( 'Name' ),
 					'<a target="_blank" href="https://wow-company.com/" title="Wow-Company">Wow-Company</a>',
 					'<a target="_blank" href="https://wordpress.org/support/theme/iknowledgebase/reviews/" title="' . esc_attr__( 'Review IKnowledgeBase', 'iknowledgebase' ) . '">' . esc_html__( 'rate it', 'iknowledgebase' ) . '</a>'
