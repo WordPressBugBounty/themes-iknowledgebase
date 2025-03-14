@@ -24,7 +24,7 @@ $iknowledgebase_settings = get_option( 'iknowledgebase_settings', false );
 						<?php iknowledgebase_posts_sorter(); ?>
                     </div>
 					<?php if ( have_posts() ) : ?>
-                        <div class="panel has-background-white">
+                        <div class="panel has-background-white" id="content">
 							<?php
 							iknowledgebase_get_sticky_posts_in_category();
 							// Load posts loop.

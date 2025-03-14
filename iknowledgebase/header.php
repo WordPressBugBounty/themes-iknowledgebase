@@ -68,7 +68,7 @@
         </div>
     </nav>
 </header>
-<main class="main is-relative is-flex-shrink-0" id="content">
+<main class="main is-relative is-flex-shrink-0">
 	<?php $iknowledgebase_settings = get_option( 'iknowledgebase_settings', false ); ?>
 	<?php if ( !empty( $iknowledgebase_settings['body_svg'] ) ) : ?>
         <svg class="intersect" viewBox="0 0 1441 279" xmlns="http://www.w3.org/2000/svg"

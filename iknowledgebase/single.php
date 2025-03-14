@@ -20,7 +20,7 @@ $sidebar_hide = !empty($iknowledgebase_settings['post_hide_sidebar']) ? ' is-hid
         </div>
         <div class="columns is-multiline pt-5<?php iknowledgebase_sidebar_location();?>">
             <div class="column is-full-touch<?php echo esc_attr($sidebar_hide);?>"><?php get_sidebar(); ?></div>
-            <div class="column is-full-touch is-two-thirds-desktop">
+            <div class="column is-full-touch is-two-thirds-desktop" id="content">
 	            <?php while ( have_posts() ) : the_post(); ?>
 		            <?php get_template_part( 'template-parts/content', 'post' ); ?>
 		            <?php

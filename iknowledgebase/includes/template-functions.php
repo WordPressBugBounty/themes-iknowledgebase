@@ -1,6 +1,7 @@
 <?php
 /**
- * Functions which enhance the theme by hooking into WordPress
+ * Functions which enha Functions which enhance the theme by hooking into WordPress
+ * nce the theme by hooking into WordPress
  *
  * @package iknowledgebase
  */

@@ -22,7 +22,7 @@ get_header();
                 </div>
 
 				<?php if ( have_posts() ) : ?>
-                    <div class="panel has-background-white">
+                    <div class="panel has-background-white" id="content">
 						<?php
 
 						// Load posts loop.

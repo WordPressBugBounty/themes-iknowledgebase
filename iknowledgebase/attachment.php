@@ -15,7 +15,7 @@ get_header();
 
 <section class="section">
     <div class="container">
-        <div class="is-max-w-full mx-auto content pt-5">
+        <div class="is-max-w-full mx-auto content pt-5" id="content">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'template-parts/content', 'attachment' ); ?>
 				<?php

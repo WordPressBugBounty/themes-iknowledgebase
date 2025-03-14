@@ -14,7 +14,7 @@ get_header();
                 <div class="level-left"><?php iknowledgebase_breadcrumbs(); ?></div>
                 <div class="level-right"><?php get_search_form(); ?></div>
             </div>
-            <div class="is-max-w-2xl mx-auto pt-5">
+            <div class="is-max-w-2xl mx-auto pt-5" id="content">
                     <div class="box is-mobile">
 						<?php iknowledgebase_posts_sorter(); ?>
                     </div>

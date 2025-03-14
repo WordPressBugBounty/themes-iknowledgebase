@@ -77,7 +77,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 				</p>
 
 				<p>
-					<a href="https://docs.wow-company.com/category/themes/iknowledgebase/" target="_blank">
+					<a href="https://wow-estore.com/documentations/iknowledgebase-pro/" target="_blank">
 						<?php esc_html_e( 'Theme Documentation', 'iknowledgebase' ); ?>
 					</a>
 				</p>

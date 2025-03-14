@@ -23,7 +23,7 @@ get_header();
                 </div>
             </div>
 
-            <div class="columns is-multiline mb-6">
+            <div class="columns is-multiline mb-6" id="content">
 				<?php iknowledgebase_get_home_posts(); ?>
             </div>
 

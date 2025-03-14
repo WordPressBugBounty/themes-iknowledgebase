@@ -7,7 +7,7 @@
 ?>
 
 </main>
-<footer class="footer mt-6 py-4">
+<footer class="footer mt-auto py-4">
 
     <div class="navbar is-transparent">
         <div class="container">
