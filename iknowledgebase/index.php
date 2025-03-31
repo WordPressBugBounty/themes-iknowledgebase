@@ -15,7 +15,7 @@ get_header();
 
 ?>
 
-<section class="section">
+<section class="section" id="content">
     <div class="container">
         <div class="has-text-centered mb-6">
 			<?php iknowledgebase_main_image(); ?>
@@ -29,9 +29,9 @@ get_header();
             </div>
 
 			<?php if ( have_posts() ) : ?>
-                <div class="panel has-background-white">
+            <h2 class="screen-reader-text"><?php esc_html_e('Article List', 'iknowledgebase');?></h2>
+                <div class="panel has-background-white"  role="list">
 					<?php
-
 					// Load posts loop.
 					while ( have_posts() ) {
 						the_post();

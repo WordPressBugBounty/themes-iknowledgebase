@@ -29,6 +29,9 @@ iknowledgebase is distributed under the terms of the GNU GPL
 
 ## Changelog
 
+#### = 1.3.10 =
+* Fixed: accessibility issues
+* 
 #### = 1.3.8 =
 * Fixed: minor bugs with translation
 

@@ -22,7 +22,7 @@
 				?>
             </div>
 
-            <div id="main-menu" class="navbar-menu is-active">
+            <div id="footer-menu" class="navbar-menu is-active">
                 <div class="navbar-end">
 					<?php
 					wp_nav_menu( array(

@@ -40,8 +40,9 @@ function iknowledgebase_brand() {
 		the_custom_logo();
 	} else {
 		?>
-        <a class="navbar-item" href="<?php echo esc_url( home_url( '/' ) ); ?>"
-           title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+        <a class="navbar-item" href="<?php
+		echo esc_url( home_url( '/' ) ); ?>" title="<?php
+		echo esc_attr( get_bloginfo( 'name' ) ); ?>">
             <span class="navbar-item brand-name">
                 <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
             </span>
@@ -49,6 +50,11 @@ function iknowledgebase_brand() {
 		<?php
 	}
 
+	if ( is_front_page() && is_home() ) {
+		?>
+        <h1 class="screen-reader-text"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></h1>
+		<?php
+	}
 }
 
 
@@ -88,7 +94,6 @@ function iknowledgebase_link_pages() {
 
 
 function iknowledgebase_go_filter() {
-
 	global $wp_query;
 
 	$select = ! empty( $_GET['select'] ) ? sanitize_text_field( wp_unslash( $_GET['select'] ) ) : 'newest';
@@ -119,7 +124,7 @@ function iknowledgebase_go_filter() {
 
 	$category = ! empty( $_GET['category'] ) ? absint( $_GET['category'] ) : 0;
 
-	if ( !empty($iknowledgebase_settings['archive_sidebar']) && is_category() && ! empty( $category ) ) {
+	if ( ! empty( $iknowledgebase_settings['archive_sidebar'] ) && is_category() && ! empty( $category ) ) {
 		$args['cat'] = $category;
 	}
 
@@ -164,7 +169,8 @@ function iknowledgebase_posts_sorter() {
     <form method="get" id="order" class="level is-mobile" action="">
         <div class="level-left">
             <div class="level-item is-hidden-mobile">
-                <p><?php esc_html_e( 'Sorted', 'iknowledgebase' ); ?>:</p>
+                <p><?php
+					esc_html_e( 'Sorted', 'iknowledgebase' ); ?>:</p>
             </div>
             <div class="level-item">
                 <div class="field">
@@ -173,7 +179,8 @@ function iknowledgebase_posts_sorter() {
                             <select name="select" class="" onchange="this.form.submit();">
 								<?php
 								foreach ( $sorter_arr as $key => $val ) {
-									echo '<option value="' . esc_attr( $key ) . '" ' . selected( $key, $sorterby, false ) . '>' . esc_html( $val ) . '</option>';
+									echo '<option value="' . esc_attr( $key ) . '" ' . selected( $key, $sorterby,
+											false ) . '>' . esc_html( $val ) . '</option>';
 								}
 								?>
                             </select>
@@ -189,7 +196,8 @@ function iknowledgebase_posts_sorter() {
                             <select name="per_page" class="" onchange="this.form.submit();">
 								<?php
 								foreach ( $posts_arr as $key => $val ) {
-									echo '<option value="' . esc_attr( $key ) . '" ' . selected( $key, $posts, false ) . '>' . esc_html( $val ) . '</option>';
+									echo '<option value="' . esc_attr( $key ) . '" ' . selected( $key, $posts,
+											false ) . '>' . esc_html( $val ) . '</option>';
 								}
 								?>
                             </select>
@@ -198,7 +206,8 @@ function iknowledgebase_posts_sorter() {
                 </div>
             </div>
 
-			<?php if ( $sidebar && is_category() && $children ) :
+			<?php
+			if ( $sidebar && is_category() && $children ) :
 
 				array_unshift( $children, '0' );
 				?>
@@ -210,8 +219,10 @@ function iknowledgebase_posts_sorter() {
                                 <select name="category" class="" onchange="this.form.submit();">
 									<?php
 									foreach ( $children as $key => $val ) {
-										$name = empty( $val ) ? esc_attr__( 'All', 'iknowledgebase' ) : get_cat_name( $val );
-										echo '<option value="' . absint( $val ) . '" ' . selected( $val, $category, false ) . '>' . esc_html( $name ) . '</option>';
+										$name = empty( $val ) ? esc_attr__( 'All',
+											'iknowledgebase' ) : get_cat_name( $val );
+										echo '<option value="' . absint( $val ) . '" ' . selected( $val, $category,
+												false ) . '>' . esc_html( $name ) . '</option>';
 									}
 									?>
                                 </select>
@@ -221,12 +232,16 @@ function iknowledgebase_posts_sorter() {
                 </div>
 
 
-			<?php endif; ?>
+			<?php
+			endif; ?>
 
         </div>
-        <?php if(isset($_GET['s'])) : ?>
-            <input type="hidden" name="s" value="<?php echo esc_attr( $_GET['s'] ) ?>">
-        <?php endif; ?>
+		<?php
+		if ( isset( $_GET['s'] ) ) : ?>
+            <input type="hidden" name="s" value="<?php
+			echo esc_attr( $_GET['s'] ) ?>">
+		<?php
+		endif; ?>
     </form>
 	<?php
 }
@@ -255,7 +270,8 @@ function iknowledgebase_breadcrumbs() {
 	$separator        = get_theme_mod( 'iknowledgebase_breadcrumb_separators', '' );
 	$separators_class = ! empty( $separator ) ? ' has-' . esc_attr( $separator ) . '-separator' : '';
 	echo '<nav class="breadcrumb is-size-7 is-hidden-mobile' . esc_attr( $separators_class ) . '" aria-label="breadcrumbs"><ul>';
-	echo ' <li><a href="' . esc_url( home_url() ) . '"><span>' . esc_html__( 'Home', 'iknowledgebase' ) . '</span></a></li>';
+	echo ' <li><a href="' . esc_url( home_url() ) . '"><span>' . esc_html__( 'Home',
+			'iknowledgebase' ) . '</span></a></li>';
 	if ( is_category() || is_tag() ) {
 		$object = get_queried_object();
 		if ( ! empty( $object->parent ) ) {
@@ -285,15 +301,14 @@ function iknowledgebase_sidebar_location() {
 
 // Prints HTML with meta information for the current post-date/time.
 function iknowledgebase_posted_on() {
-	$time_string = sprintf( __( '%s ago', 'iknowledgebase' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) );
+	$time_string = sprintf( __( '%s ago', 'iknowledgebase' ),
+		human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) );
 	echo esc_attr( $time_string );
-
 }
 
 // Prints HTML with meta information for the current author.
 function iknowledgebase_posted_by() {
 	echo '<a class="" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a>';
-
 }
 
 // Reading post time
@@ -321,15 +336,21 @@ function iknowledgebase_get_sticky_posts_in_category() {
 	$sticky_icon_color = ! empty( $sticky_icon_color ) ? ' ' . $sticky_icon_color : '';
 
 	foreach ( $stickies as $sticky_id ) {
-		if ( in_category( $cat_id, $sticky_id ) || iknowledgebase_post_is_in_descendant_category( $cat_id, $sticky_id ) ) {
+		if ( in_category( $cat_id, $sticky_id ) || iknowledgebase_post_is_in_descendant_category( $cat_id,
+				$sticky_id ) ) {
 			$title     = get_the_title( $sticky_id );
 			$permalink = get_the_permalink( $sticky_id ); ?>
-            <a class="panel-block is-borderless" href="<?php echo esc_url( $permalink ); ?>">
-                <span class="panel-icon<?php echo esc_attr( $sticky_icon_color ); ?>">
-                    <span class="<?php echo esc_attr( $post_icon ); ?>"></span>
+            <a class="panel-block is-borderless" href="<?php
+			echo esc_url( $permalink ); ?>">
+                <span class="panel-icon<?php
+                echo esc_attr( $sticky_icon_color ); ?>">
+                    <span class="<?php
+                    echo esc_attr( $post_icon ); ?>"></span>
                 </span>
-				<?php do_action( 'iknowledgebase_post_time' ); ?>
-                <h4><?php echo esc_html( $title ); ?></h4>
+				<?php
+				do_action( 'iknowledgebase_post_time' ); ?>
+                <h4><?php
+					echo esc_html( $title ); ?></h4>
             </a>
 			<?php
 		}
@@ -366,7 +387,6 @@ function iknowledgebase_amp_menu_toggle() {
 		echo "[aria-expanded]=\"mainMenuExpanded? 'true' : 'false'\" ";
 		echo 'on="tap:AMP.setState({mainMenuExpanded: !mainMenuExpanded})" ';
 		echo "[class]=\"'navbar-burger' + ( mainMenuExpanded ? ' is-active' : '' )\"";
-
 	}
 }
 
