@@ -17,7 +17,7 @@ $iknowledgebase_settings = get_option( 'iknowledgebase_settings', false );
                         <div class="level-item">
                         <span class="icon-text">
                           <span class="icon has-text-primary">
-                            <span class="icon-clock"></span>
+                            <span class="icon-clock" aria-hidden="true"></span>
                           </span>
                           <span><?php iknowledgebase_posted_on(); ?></span>
                         </span>
@@ -27,7 +27,7 @@ $iknowledgebase_settings = get_option( 'iknowledgebase_settings', false );
                         <div class="level-item is-hidden-touch">
                         <span class="icon-text">
                           <span class="icon has-text-primary">
-                            <span class="icon-user-alt"></span>
+                            <span class="icon-user-alt" aria-hidden="true"></span>
                           </span>
                           <span><?php iknowledgebase_posted_by(); ?></span>
                         </span>
@@ -35,7 +35,7 @@ $iknowledgebase_settings = get_option( 'iknowledgebase_settings', false );
                         <div class="level-item">
                         <span class="icon-text">
                           <span class="icon has-text-primary">
-                            <span class="icon-hourglass"></span>
+                            <span class="icon-hourglass" aria-hidden="true"></span>
                           </span>
                           <span><?php iknowledgebase_reading_time(); ?></span>
                         </span>

@@ -400,3 +400,25 @@ function iknowledgebase_amp_menu_is_toggled() {
 	}
 }
 
+function iknowledgebase_search_field_text() {
+	$option = get_theme_mod( 'iknowledgebase_settings', '' );
+    $text = !empty($option['search_text']) ? $option['search_text'] : __( 'How can we help you?', 'iknowledgebase' );
+	echo esc_attr( $text );
+}
+
+function iknowledgebase_sidebar_class() {
+	$classes = [];
+	$option  = get_theme_mod( 'iknowledgebase_settings', [] );
+
+	if ( ! empty( $option['sidebar_sticky'] ) ) {
+		$classes[] = 'is-sticky';
+	}
+
+	$classes = apply_filters( 'iknowledgebase_sidebar_classes', $classes );
+
+	if ( ! empty( $classes ) ) {
+		echo ' class="' . esc_attr( implode( ' ', $classes ) ) . '"';
+	}
+
+	echo '';
+}

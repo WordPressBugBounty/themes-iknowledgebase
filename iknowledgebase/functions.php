@@ -7,7 +7,7 @@
 
 if ( ! defined( 'IKNOWLEDGEBASE_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'IKNOWLEDGEBASE_VERSION', '1.3.10' );
+	define( 'IKNOWLEDGEBASE_VERSION', '1.4' );
 }
 
 // Theme setup
@@ -47,7 +47,7 @@ add_action( 'after_setup_theme', 'iknowledgebase_setup' );
 
 // Include styles and scripts
 function iknowledgebase_scripts() {
-	$pre_suffix   = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+	$pre_suffix   = '.min';
 	$template_uri = get_template_directory_uri();
 
 	wp_enqueue_style( 'google-font', 'https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway:wght@400;700&display=swap' );
@@ -76,7 +76,7 @@ function iknowledgebase_admin_scripts() {
 	$pre_suffix   = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 	$template_uri = get_template_directory_uri();
 
-	wp_enqueue_script( 'iknowledgebase-admin', $template_uri . '/assets/js/admin-script' . $pre_suffix . '.js', array( 'jquery' ), IKNOWLEDGEBASE_VERSION, true );
+	wp_enqueue_script( 'iknowledgebase-admin', $template_uri . '/assets/js/admin-script.js', array( 'jquery' ), IKNOWLEDGEBASE_VERSION, true );
 
 }
 add_action( 'admin_enqueue_scripts', 'iknowledgebase_admin_scripts' );

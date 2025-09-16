@@ -17,7 +17,7 @@ $iknowledgebase_settings = get_option( 'iknowledgebase_settings', false );
             </div>
             <div class="columns is-multiline is-centered pt-5<?php iknowledgebase_sidebar_location(); ?>">
 
-                <div class="column is-full-touch"><?php get_sidebar(); ?></div>
+                <div class="column is-full-touch is-relative"><?php get_sidebar(); ?></div>
 
                 <div class="column is-full-touch is-two-thirds-desktop">
                     <div class="box is-mobile">

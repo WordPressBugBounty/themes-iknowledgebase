@@ -25,6 +25,7 @@ function iknowledgebase_customize_register( $wp_customize ) {
 		'default'           => 'left',
 		'sanitize_callback' => 'iknowledgebase_sanitize_sidebar_location',
 	) );
+
 	$wp_customize->add_control( 'iknowledgebase_sidebar_location', array(
 		'type'     => 'select',
 		'label'    => esc_attr__( 'Sidebar location:', 'iknowledgebase' ),
@@ -48,6 +49,19 @@ function iknowledgebase_customize_register( $wp_customize ) {
 		'section' => 'iknowledgebase_main_settings',
 		'type'    => 'checkbox',
 	) );
+
+	$wp_customize->add_setting( 'iknowledgebase_settings[search_text]', array(
+		'default'   => __('How can we help you?', 'iknowledgebase'),
+		'sanitize_callback' => 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control( 'iknowledgebase_settings[search_text]', array(
+		'type'        => 'text',
+		'label'       => esc_attr__( 'Search text:', 'iknowledgebase' ),
+		'section' => 'iknowledgebase_main_settings',
+		'description' => esc_attr__( 'Change the text in the search field', 'iknowledgebase' ),
+	) );
+
 
 	//endregion
 
@@ -258,6 +272,17 @@ function iknowledgebase_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'iknowledgebase_settings[post_hide_sidebar]', array(
 		'label'   => esc_attr__( 'Hide sidebar on mobile devices', 'iknowledgebase' ),
+		'section' => 'iknowledgebase_posts_settings',
+		'type'    => 'checkbox',
+	) );
+
+	$wp_customize->add_setting( 'iknowledgebase_settings[sidebar_sticky]', array(
+		'default'           => 0,
+		'sanitize_callback' => 'iknowledgebase_sanitize_checkbox',
+	) );
+
+	$wp_customize->add_control( 'iknowledgebase_settings[sidebar_sticky]', array(
+		'label'   => esc_attr__( 'Enable Sticky Sidebar', 'iknowledgebase' ),
 		'section' => 'iknowledgebase_posts_settings',
 		'type'    => 'checkbox',
 	) );

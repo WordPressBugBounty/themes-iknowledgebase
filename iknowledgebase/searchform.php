@@ -6,6 +6,7 @@
  */
 
 $size = (is_single() || is_archive()) ? '' : ' is-medium';
+$search_text = get_theme_mod('iknowledgebase_settings[search_text]', __('How can we help you?', 'iknowledgebase'));
 
 ?>
 <form method="get" id="searchform" role="search" class="search-form is-relative" action="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php esc_attr_e( 'Site search', 'twentytwelve' ); ?>">
@@ -14,7 +15,7 @@ $size = (is_single() || is_archive()) ? '' : ' is-medium';
             <label class="screen-reader-text"
                    for="s"><?php esc_html_e( 'Search for:', 'iknowledgebase' ); ?></label>
             <input type="text" value="<?php the_search_query(); ?>" name="s" id="s" aria-label="<?php esc_attr_e( 'Search for:', 'iknowledgebase' ); ?>"
-                   placeholder="<?php esc_attr_e( 'How can we help you?', 'iknowledgebase' ); ?>"
+                   placeholder="<?php iknowledgebase_search_field_text(); ?>"
                    class="input live-search is-primary<?php echo esc_attr($size);?>" autocomplete="off"/>
         </div>
         <div class="control">

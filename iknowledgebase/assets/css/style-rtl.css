@@ -6868,6 +6868,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   position: relative !important;
 }
 
+.is-sticky {
+  position: sticky;
+  top: 0;
+}
+
 .is-marginless {
   margin: 0 !important;
 }
@@ -9657,4 +9662,18 @@ a.has-text-primary:hover, a.has-text-primary:focus {
 :where(.wp-block-file__button):is(a):hover,
 :where(.wp-block-file__button):is(a):visited {
   color: #A855F7;
+}
+
+.panel-block {
+  overflow-wrap: break-word;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.iknowledgebase_widget_current_nav a {
+  overflow-wrap: break-word;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }

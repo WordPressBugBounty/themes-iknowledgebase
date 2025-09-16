@@ -62,8 +62,8 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 				<span class="customize-control-title"><?php esc_html_e( 'Theme Links', 'iknowledgebase' ); ?></span>
 
 				<p>
-					<a href="https://wow-company.com/iknowledgebase-theme/"
-					   target="_blank"><?php esc_html_e( 'Theme Page', 'iknowledgebase' ); ?></a>
+					<a href="https://wow-estore.com/documentations/iknowledgebase-pro/"
+					   target="_blank"><?php esc_html_e( 'Documentation', 'iknowledgebase' ); ?></a>
 				</p>
 
 				<p>
@@ -73,14 +73,12 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 
 				<p>
 					<a href="https://themes.wow-company.com/iknowledgebasepro/"
-					   target="_blank"><?php esc_html_e( 'Theme Demo PRO version', 'iknowledgebase' ); ?></a>
+					   target="_blank"><?php esc_html_e( 'PRO Demo', 'iknowledgebase' ); ?></a>
 				</p>
 
-				<p>
-					<a href="https://wow-estore.com/documentations/iknowledgebase-pro/" target="_blank">
-						<?php esc_html_e( 'Theme Documentation', 'iknowledgebase' ); ?>
-					</a>
-				</p>
+                <a href="https://support.wow-company.com/" target="_blank">
+					<?php esc_html_e( 'Support', 'iknowledgebase' ); ?>
+                </a>
 
 				<p>
 					<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/iknowledgebase/reviews/', 'iknowledgebase' ) ); ?>"

@@ -42,7 +42,7 @@ function iknowledgebase_get_home_posts() {
 		$out .= '<div class="panel has-background-white">';
 		$out .= '<div class="panel-heading level is-mobile">';
 		$out .= '<div class="level-left">';
-		$out .= '<div class="level-item has-text-primary"><span class="' . esc_attr( $cat_icon ) . '"></span></div>';
+		$out .= '<div class="level-item has-text-primary"><span class="' . esc_attr( $cat_icon ) . '" aria-hidden="true"></span></div>';
 		$out .= '<div class="level-item"><h2 class="title is-5" id="category-' . absint( $cat->cat_ID ) . '">' . esc_attr( $cat->name ) . '</h2></div>';
 		$out .= '</div>';
 		$out .= '<div class="level-right"><span class="tag is-white has-text-primary">' . absint( $count ) . '</span></div>';

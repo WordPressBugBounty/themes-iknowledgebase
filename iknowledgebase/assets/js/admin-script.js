@@ -12,7 +12,6 @@
 
   function iknowledgeMenuType(el) {
     const type = $(el).val();
-    console.log(type);
     const parent = $(el).parents('.menu-item-settings');
     const btnType = $(parent).find('.field-item-type-button');
     $(btnType).hide();
