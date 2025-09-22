@@ -9677,3 +9677,7 @@ a.has-text-primary:hover, a.has-text-primary:focus {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+
+.search-form .icon {
+  margin-right: calc(-.5em - 1px) !important;
+}

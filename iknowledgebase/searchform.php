@@ -9,7 +9,7 @@ $size = (is_single() || is_archive()) ? '' : ' is-medium';
 $search_text = get_theme_mod('iknowledgebase_settings[search_text]', __('How can we help you?', 'iknowledgebase'));
 
 ?>
-<form method="get" id="searchform" role="search" class="search-form is-relative" action="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php esc_attr_e( 'Site search', 'twentytwelve' ); ?>">
+<form method="get" id="searchform" role="search" class="search-form is-relative" action="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php esc_attr_e( 'Site search', 'iknowledgebase' ); ?>">
     <div class="field has-addons m-0">
         <div class="control is-expanded">
             <label class="screen-reader-text"

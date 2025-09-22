@@ -83,9 +83,13 @@ function iknowledgebase_home_panel_tabs( $cat_ID ) {
 
 	$elements = apply_filters( 'iknowledgebase_home_panel_tabs', $tabs );
 
-	$child_cats = get_categories( array(
+	$child_arg = array(
 		'parent' => $cat_ID,
-	) );
+	);
+
+	$child_arg = apply_filters( 'iknowledgebase_home_subcategories', $child_arg );
+
+	$child_cats = get_categories( $child_arg );
 
 	if ( ! $child_cats ) {
 		unset( $elements['subcats'] );
@@ -96,9 +100,9 @@ function iknowledgebase_home_panel_tabs( $cat_ID ) {
 	$i = 0;
 	foreach ( $elements as $key => $val ) {
 		if ( $i === 0 ) {
-			$header .= '<a id="tab-' . esc_attr( $key ) . '-'.absint($cat_ID).'" class="is-active" role="tab" aria-selected="true" aria-controls="' . esc_attr( $key ) . '-'.absint($cat_ID).'" data-tab="' . esc_attr( $key ) . '"' . iknowledgebase_panel_toogle( $elements, $key, $cat_ID ) . '>' . esc_html( $val ) . '</a>';
+			$header .= '<a id="tab-' . esc_attr( $key ) . '-' . absint( $cat_ID ) . '" class="is-active" role="tab" aria-selected="true" aria-controls="' . esc_attr( $key ) . '-' . absint( $cat_ID ) . '" data-tab="' . esc_attr( $key ) . '"' . iknowledgebase_panel_toogle( $elements, $key, $cat_ID ) . '>' . esc_html( $val ) . '</a>';
 		} else {
-			$header .= '<a id="tab-' . esc_attr( $key ) . '-'.absint($cat_ID).'" tabindex="0" class="" role="tab" aria-selected="false" aria-controls="' . esc_attr( $key ) . '-'.absint($cat_ID).'" data-tab="' . esc_attr( $key ) . '"' . iknowledgebase_panel_toogle( $elements, $key, $cat_ID ) . '>' . esc_html( $val ) . ' </a>';
+			$header .= '<a id="tab-' . esc_attr( $key ) . '-' . absint( $cat_ID ) . '" tabindex="0" class="" role="tab" aria-selected="false" aria-controls="' . esc_attr( $key ) . '-' . absint( $cat_ID ) . '" data-tab="' . esc_attr( $key ) . '"' . iknowledgebase_panel_toogle( $elements, $key, $cat_ID ) . '>' . esc_html( $val ) . ' </a>';
 		}
 		$i ++;
 	}
@@ -118,9 +122,9 @@ function iknowledgebase_home_panel_tabs( $cat_ID ) {
 	$i = 0;
 	foreach ( $elements as $key => $val ) {
 		if ( $i === 0 ) {
-			$content .= '<div data-content="' . esc_attr( $key ) . '" role="tabpanel" aria-labelledby="tab-' . absint( $key ) . '-'.absint($cat_ID).'"  class="tabs-content"' . iknowledgebase_panel_content_toogle( $elements, $key, $cat_ID ) . '>';
+			$content .= '<div data-content="' . esc_attr( $key ) . '" role="tabpanel" aria-labelledby="tab-' . absint( $key ) . '-' . absint( $cat_ID ) . '"  class="tabs-content"' . iknowledgebase_panel_content_toogle( $elements, $key, $cat_ID ) . '>';
 		} else {
-			$content .= '<div data-content="' . esc_attr( $key ) . '" role="tabpanel" aria-labelledby="tab-' . absint( $key ) . '-'.absint($cat_ID).'" aria-labelledby  class="tabs-content is-hidden"' . iknowledgebase_panel_content_toogle( $elements, $key, $cat_ID ) . '>';
+			$content .= '<div data-content="' . esc_attr( $key ) . '" role="tabpanel" aria-labelledby="tab-' . absint( $key ) . '-' . absint( $cat_ID ) . '" aria-labelledby  class="tabs-content is-hidden"' . iknowledgebase_panel_content_toogle( $elements, $key, $cat_ID ) . '>';
 		}
 
 		if ( $key === 'subcats' ) {

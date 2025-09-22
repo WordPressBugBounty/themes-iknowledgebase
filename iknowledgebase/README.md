@@ -28,6 +28,8 @@ iknowledgebase WordPress Theme, Copyright 2021 Wow-Company & Dmytro Lobov
 iknowledgebase is distributed under the terms of the GNU GPL
 
 ## Changelog
+#### = 1.4.1 =
+* Fixed: style for search button
 
 #### = 1.4 =
 * Added: Option to change the search field text.

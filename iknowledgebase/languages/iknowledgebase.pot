@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: IKnowledgeBase\n"
-"POT-Creation-Date: 2021-12-21 14:19+0200\n"
+"POT-Creation-Date: 2025-09-22 09:50+0300\n"
 "PO-Revision-Date: 2021-10-25 16:43+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -59,7 +59,7 @@ msgstr ""
 msgid "Your email address will not be published."
 msgstr ""
 
-#: comments.php:45 includes/customizer.php:82 includes/customizer.php:408
+#: comments.php:45 includes/customizer.php:96 includes/customizer.php:433
 msgid "Name"
 msgstr ""
 
@@ -75,16 +75,16 @@ msgstr ""
 msgid "Save my name and email in this browser for the next time I comment."
 msgstr ""
 
-#: comments.php:77 includes/template-functions.php:38
+#: comments.php:77 includes/template-functions.php:68
 msgid "Previous"
 msgstr ""
 
-#: comments.php:78 includes/template-functions.php:39
-#: includes/template-functions.php:55
+#: comments.php:78 includes/template-functions.php:69
+#: includes/template-functions.php:85
 msgid "Next page"
 msgstr ""
 
-#: comments.php:81 includes/template-functions.php:42
+#: comments.php:81 includes/template-functions.php:72
 msgid "Posts navigation"
 msgstr ""
 
@@ -92,23 +92,23 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:20 includes/customizer.php:378
+#: footer.php:20 includes/customizer.php:403
 msgid "Y"
 msgstr ""
 
-#: functions.php:28
+#: functions.php:30
 msgid "Left Main Menu"
 msgstr ""
 
-#: functions.php:29
+#: functions.php:31
 msgid "Right Main Menu"
 msgstr ""
 
-#: functions.php:30
+#: functions.php:32
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:81
+#: functions.php:87
 msgid "Sidebar"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: includes/customizer-info.php:19 includes/theme-info.php:20
+#: includes/customizer-info.php:19
 msgid "Theme Info"
 msgstr ""
 
@@ -133,47 +133,46 @@ msgid "Theme Links"
 msgstr ""
 
 #: includes/customizer-info.php:66 includes/theme-info.php:49
-msgid "Theme Page"
+msgid "Documentation"
 msgstr ""
 
-#: includes/customizer-info.php:71 includes/theme-info.php:51
+#: includes/customizer-info.php:71
 msgid "Theme Demo"
 msgstr ""
 
 #: includes/customizer-info.php:76 includes/theme-info.php:53
-msgid "Theme Demo PRO version"
+msgid "PRO Demo"
 msgstr ""
 
-#: includes/customizer-info.php:81 includes/theme-info.php:55
-#: includes/theme-info.php:72
-msgid "Theme Documentation"
+#: includes/customizer-info.php:80 includes/theme-info.php:60
+msgid "Support"
 msgstr ""
 
-#: includes/customizer-info.php:86 includes/theme-info.php:57
+#: includes/customizer-info.php:84
 msgid "https://wordpress.org/support/theme/iknowledgebase/reviews/"
 msgstr ""
 
-#: includes/customizer-info.php:87 includes/theme-info.php:58
+#: includes/customizer-info.php:85 includes/theme-info.php:56
 msgid "Rate this theme"
 msgstr ""
 
-#: includes/customizer-info.php:105 includes/theme-info.php:120
+#: includes/customizer-info.php:103 includes/theme-info.php:144
 msgid "Pro Version Add-on"
 msgstr ""
 
-#: includes/customizer-info.php:108
+#: includes/customizer-info.php:106
 #, php-format
 msgid ""
 "Purchase the %s Pro Add-on to get additional features and advanced "
 "customization options."
 msgstr ""
 
-#: includes/customizer-info.php:113 includes/theme-info.php:128
+#: includes/customizer-info.php:111 includes/theme-info.php:152
 #, php-format
 msgid "Learn more about %s Pro"
 msgstr ""
 
-#: includes/customizer.php:12 includes/theme-info.php:86
+#: includes/customizer.php:12 includes/theme-info.php:110
 msgid "Theme Options"
 msgstr ""
 
@@ -185,295 +184,312 @@ msgstr ""
 msgid "Main Settings"
 msgstr ""
 
-#: includes/customizer.php:30
+#: includes/customizer.php:31
 msgid "Sidebar location:"
 msgstr ""
 
-#: includes/customizer.php:34 includes/customizer.php:435
+#: includes/customizer.php:35 includes/customizer.php:460
 msgid "Left"
 msgstr ""
 
-#: includes/customizer.php:35 includes/customizer.php:436
+#: includes/customizer.php:36 includes/customizer.php:461
 msgid "Right"
 msgstr ""
 
-#: includes/customizer.php:47
+#: includes/customizer.php:48
 msgid "Enable Body background image"
 msgstr ""
 
-#: includes/customizer.php:57
+#: includes/customizer.php:54 includes/template-functions.php:405
+#: searchform.php:9
+msgid "How can we help you?"
+msgstr ""
+
+#: includes/customizer.php:60
+msgid "Search text:"
+msgstr ""
+
+#: includes/customizer.php:62
+msgid "Change the text in the search field"
+msgstr ""
+
+#: includes/customizer.php:71
 msgid "Home page Category"
 msgstr ""
 
-#: includes/customizer.php:68
+#: includes/customizer.php:82
 msgid "Post Number"
 msgstr ""
 
-#: includes/customizer.php:70
+#: includes/customizer.php:84
 msgid "Set the numbers of posts on home page."
 msgstr ""
 
-#: includes/customizer.php:79
+#: includes/customizer.php:93
 msgid "Categories Order by:"
 msgstr ""
 
-#: includes/customizer.php:83 includes/customizer.php:409
+#: includes/customizer.php:97 includes/customizer.php:434
 #: includes/widgets/class-widget-current-nav.php:182
-#: includes/widgets/class-widget-current-nav.php:245
+#: includes/widgets/class-widget-current-nav.php:249
 msgid "ID"
 msgstr ""
 
-#: includes/customizer.php:84 includes/customizer.php:410
+#: includes/customizer.php:98 includes/customizer.php:435
 msgid "In the order specified in \"Include Categories\""
 msgstr ""
 
-#: includes/customizer.php:94
+#: includes/customizer.php:108
 msgid "Categories Order:"
 msgstr ""
 
-#: includes/customizer.php:97 includes/customizer.php:422
+#: includes/customizer.php:111 includes/customizer.php:447
 #: includes/widgets/class-widget-current-nav.php:190
-#: includes/widgets/class-widget-current-nav.php:257
+#: includes/widgets/class-widget-current-nav.php:261
 msgid "ASC"
 msgstr ""
 
-#: includes/customizer.php:98 includes/customizer.php:423
-#: includes/widgets/class-widget-current-nav.php:258
-#: includes/widgets/class-widget-current-nav.php:264
+#: includes/customizer.php:112 includes/customizer.php:448
+#: includes/widgets/class-widget-current-nav.php:262
+#: includes/widgets/class-widget-current-nav.php:268
 msgid "DESC"
 msgstr ""
 
-#: includes/customizer.php:107
+#: includes/customizer.php:121
 msgid "Exclude Categories:"
 msgstr ""
 
-#: includes/customizer.php:109
+#: includes/customizer.php:123
 msgid ""
 "Exclude categories. A comma-separated string of category ids to exclude "
 "along with all of their descendant categories."
 msgstr ""
 
-#: includes/customizer.php:117
+#: includes/customizer.php:131
 msgid "Include Categories:"
 msgstr ""
 
-#: includes/customizer.php:119
+#: includes/customizer.php:133
 msgid "Include categories. A comma-separated string of category ids."
 msgstr ""
 
-#: includes/customizer.php:127
+#: includes/customizer.php:141
 msgid "Navigation menu"
 msgstr ""
 
-#: includes/customizer.php:140
+#: includes/customizer.php:154
 msgid "Remove Menu space"
 msgstr ""
 
-#: includes/customizer.php:153
+#: includes/customizer.php:167
 msgid "Add Menu shadow"
 msgstr ""
 
-#: includes/customizer.php:166
+#: includes/customizer.php:180
 msgid "Fixed Menu"
 msgstr ""
 
-#: includes/customizer.php:179
+#: includes/customizer.php:193
 msgid "Remove any hover from the navbar items"
 msgstr ""
 
-#: includes/customizer.php:192
+#: includes/customizer.php:206
 msgid "Hide Logo"
 msgstr ""
 
-#: includes/customizer.php:201
+#: includes/customizer.php:215
 msgid "Archives"
 msgstr ""
 
-#: includes/customizer.php:214
+#: includes/customizer.php:228
 msgid "Remove the prefix from the title on the archives page"
 msgstr ""
 
-#: includes/customizer.php:227
+#: includes/customizer.php:241
 msgid "Category as Archive page (without sidebar)"
 msgstr ""
 
-#: includes/customizer.php:236
+#: includes/customizer.php:250
 msgid "Post"
 msgstr ""
 
-#: includes/customizer.php:248
+#: includes/customizer.php:262
 msgid "Enabled featured image"
 msgstr ""
 
-#: includes/customizer.php:260
+#: includes/customizer.php:274
 msgid "Hide sidebar on mobile devices"
 msgstr ""
 
-#: includes/customizer.php:271
+#: includes/customizer.php:285
+msgid "Enable Sticky Sidebar"
+msgstr ""
+
+#: includes/customizer.php:296
 msgid "Icon color for Sticky Post"
 msgstr ""
 
-#: includes/customizer.php:275 includes/customizer.php:306
-#: includes/customizer.php:448 includes/customizer.php:464
-#: includes/template-functions.php:122 includes/template-tags.php:363
+#: includes/customizer.php:300 includes/customizer.php:331
+#: includes/customizer.php:473 includes/customizer.php:489
+#: includes/template-functions.php:151 includes/template-tags.php:363
 #: includes/template-tags.php:377
 msgid "Default"
 msgstr ""
 
-#: includes/customizer.php:276 includes/customizer.php:465
+#: includes/customizer.php:301 includes/customizer.php:490
 #: includes/template-tags.php:386
 msgid "Black"
 msgstr ""
 
-#: includes/customizer.php:277 includes/customizer.php:466
+#: includes/customizer.php:302 includes/customizer.php:491
 #: includes/template-tags.php:384
 msgid "Light"
 msgstr ""
 
-#: includes/customizer.php:278 includes/customizer.php:467
+#: includes/customizer.php:303 includes/customizer.php:492
 #: includes/template-tags.php:385
 msgid "Dark"
 msgstr ""
 
-#: includes/customizer.php:279 includes/customizer.php:468
+#: includes/customizer.php:304 includes/customizer.php:493
 #: includes/template-tags.php:379
 msgid "Blue"
 msgstr ""
 
-#: includes/customizer.php:280 includes/customizer.php:469
+#: includes/customizer.php:305 includes/customizer.php:494
 #: includes/template-tags.php:380
 msgid "Green"
 msgstr ""
 
-#: includes/customizer.php:281 includes/customizer.php:470
+#: includes/customizer.php:306 includes/customizer.php:495
 #: includes/template-tags.php:381
 msgid "Yellow"
 msgstr ""
 
-#: includes/customizer.php:282 includes/customizer.php:471
+#: includes/customizer.php:307 includes/customizer.php:496
 #: includes/template-tags.php:382
 msgid "Red"
 msgstr ""
 
-#: includes/customizer.php:292
+#: includes/customizer.php:317
 msgid "Breadcrumb"
 msgstr ""
 
-#: includes/customizer.php:303
+#: includes/customizer.php:328
 msgid "Breadcrumb separator:"
 msgstr ""
 
-#: includes/customizer.php:307 includes/customizer.php:449
+#: includes/customizer.php:332 includes/customizer.php:474
 msgid "Arrow"
 msgstr ""
 
-#: includes/customizer.php:308 includes/customizer.php:450
+#: includes/customizer.php:333 includes/customizer.php:475
 msgid "Bullet"
 msgstr ""
 
-#: includes/customizer.php:309 includes/customizer.php:451
+#: includes/customizer.php:334 includes/customizer.php:476
 msgid "Dot"
 msgstr ""
 
-#: includes/customizer.php:310 includes/customizer.php:452
+#: includes/customizer.php:335 includes/customizer.php:477
 msgid "Succeeds"
 msgstr ""
 
-#: includes/customizer.php:318
+#: includes/customizer.php:343
 msgid "Media"
 msgstr ""
 
-#: includes/customizer.php:329
+#: includes/customizer.php:354
 msgid "Upload Main Image"
 msgstr ""
 
-#: includes/customizer.php:334 includes/customizer.php:351
+#: includes/customizer.php:359 includes/customizer.php:376
 msgid "Select Image"
 msgstr ""
 
-#: includes/customizer.php:335 includes/customizer.php:352
+#: includes/customizer.php:360 includes/customizer.php:377
 msgid "Remove Image"
 msgstr ""
 
-#: includes/customizer.php:336 includes/customizer.php:353
+#: includes/customizer.php:361 includes/customizer.php:378
 msgid "Change Image"
 msgstr ""
 
-#: includes/customizer.php:346
+#: includes/customizer.php:371
 msgid "Upload 404 Error Image"
 msgstr ""
 
-#: includes/customizer.php:360
+#: includes/customizer.php:385
 msgid "Footer"
 msgstr ""
 
-#: includes/customizer.php:373
+#: includes/customizer.php:398
 msgid "Footer Text"
 msgstr ""
 
-#: includes/customizer.php:375
+#: includes/customizer.php:400
 msgid "Enter custom footer text."
 msgstr ""
 
-#: includes/home-posts.php:78
+#: includes/home-posts.php:79
 msgid "Subcategories"
 msgstr ""
 
-#: includes/home-posts.php:79
+#: includes/home-posts.php:80
 msgid "New"
 msgstr ""
 
-#: includes/home-posts.php:80
+#: includes/home-posts.php:81
 msgid "Popular"
 msgstr ""
 
-#: includes/home-posts.php:152
+#: includes/home-posts.php:157
 msgid "View all"
 msgstr ""
 
-#: includes/template-functions.php:56
+#: includes/template-functions.php:86
 msgid "Previous page"
 msgstr ""
 
-#: includes/template-functions.php:114
+#: includes/template-functions.php:143
 msgid "Newest"
 msgstr ""
 
-#: includes/template-functions.php:115
+#: includes/template-functions.php:144
 msgid "by Title"
 msgstr ""
 
-#: includes/template-functions.php:116
+#: includes/template-functions.php:145
 msgid "by Comments"
 msgstr ""
 
-#: includes/template-functions.php:123 includes/template-functions.php:124
-#: includes/template-functions.php:125
+#: includes/template-functions.php:152 includes/template-functions.php:153
+#: includes/template-functions.php:154
 msgid "Per Page"
 msgstr ""
 
-#: includes/template-functions.php:143
+#: includes/template-functions.php:173
 msgid "Sorted"
 msgstr ""
 
-#: includes/template-functions.php:189
+#: includes/template-functions.php:222
 msgid "All"
 msgstr ""
 
-#: includes/template-functions.php:231
+#: includes/template-functions.php:273
 msgid "Home"
 msgstr ""
 
-#: includes/template-functions.php:261
+#: includes/template-functions.php:304
 #, php-format
 msgid "%s ago"
 msgstr ""
 
-#: includes/template-functions.php:278
+#: includes/template-functions.php:320
 msgid "minute"
 msgstr ""
 
-#: includes/template-functions.php:280
+#: includes/template-functions.php:322
 msgid "minutes"
 msgstr ""
 
@@ -509,59 +525,87 @@ msgstr ""
 msgid "Outlined"
 msgstr ""
 
-#: includes/theme-info.php:19 includes/theme-info.php:41
+#: includes/theme-info.php:19 includes/theme-info.php:42
 #, php-format
 msgid "Welcome to %1$s %2$s"
 msgstr ""
 
-#: includes/theme-info.php:65
+#: includes/theme-info.php:20
+msgid "Theme Settings"
+msgstr ""
+
+#: includes/theme-info.php:67
+msgid "Plugins for Best Experience"
+msgstr ""
+
+#: includes/theme-info.php:69
+msgid "Flexi Menu"
+msgstr ""
+
+#: includes/theme-info.php:73
+msgid "Buttons"
+msgstr ""
+
+#: includes/theme-info.php:76
+msgid "Popup Box"
+msgstr ""
+
+#: includes/theme-info.php:80
+msgid "Counter Box"
+msgstr ""
+
+#: includes/theme-info.php:89
 #, php-format
 msgid "Getting Started with %s"
 msgstr ""
 
-#: includes/theme-info.php:75
+#: includes/theme-info.php:96
+msgid "Theme Documentation"
+msgstr ""
+
+#: includes/theme-info.php:99
 msgid ""
 "You need help to setup and configure this theme? We got you covered with an "
 "extensive theme documentation on our website."
 msgstr ""
 
-#: includes/theme-info.php:80
+#: includes/theme-info.php:104
 #, php-format
 msgid "View %s Documentation"
 msgstr ""
 
-#: includes/theme-info.php:89
+#: includes/theme-info.php:113
 #, php-format
 msgid ""
 "%s makes use of the Customizer for all theme settings. Click on \"Customize "
 "Theme\" to open the Customizer now."
 msgstr ""
 
-#: includes/theme-info.php:93
+#: includes/theme-info.php:117
 msgid "Customize Theme"
 msgstr ""
 
-#: includes/theme-info.php:113
+#: includes/theme-info.php:137
 msgid "Get more features"
 msgstr ""
 
-#: includes/theme-info.php:123
+#: includes/theme-info.php:147
 #, php-format
 msgid ""
 "Purchase the %s Pro Add-on and get additional features and advanced "
 "customization options."
 msgstr ""
 
-#: includes/theme-info.php:145
+#: includes/theme-info.php:173
 #, php-format
 msgid "%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)"
 msgstr ""
 
-#: includes/theme-info.php:148
+#: includes/theme-info.php:176
 msgid "Review IKnowledgeBase"
 msgstr ""
 
-#: includes/theme-info.php:148
+#: includes/theme-info.php:176
 msgid "rate it"
 msgstr ""
 
@@ -586,17 +630,17 @@ msgid "Posts orderby:"
 msgstr ""
 
 #: includes/widgets/class-widget-current-nav.php:179
-#: includes/widgets/class-widget-current-nav.php:242
+#: includes/widgets/class-widget-current-nav.php:246
 msgid "Date"
 msgstr ""
 
 #: includes/widgets/class-widget-current-nav.php:180
-#: includes/widgets/class-widget-current-nav.php:243
+#: includes/widgets/class-widget-current-nav.php:247
 msgid "Title"
 msgstr ""
 
 #: includes/widgets/class-widget-current-nav.php:181
-#: includes/widgets/class-widget-current-nav.php:244
+#: includes/widgets/class-widget-current-nav.php:248
 msgid "Comment count"
 msgstr ""
 
@@ -612,12 +656,16 @@ msgstr ""
 msgid "Hide Posts"
 msgstr ""
 
-#: searchform.php:15
-msgid "Search for:"
+#: index.php:32
+msgid "Article List"
 msgstr ""
 
-#: searchform.php:17
-msgid "How can we help you?"
+#: searchform.php:12
+msgid "Site search"
+msgstr ""
+
+#: searchform.php:16 searchform.php:17
+msgid "Search for:"
 msgstr ""
 
 #: template-parts/content-none.php:14
@@ -635,7 +683,7 @@ msgid "IKnowledgeBase"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://themes.wow-company.com/iknowledgebase-theme/"
+msgid "https://themes.wow-company.com/iknowledgebase/"
 msgstr ""
 
 #. Description of the plugin/theme
