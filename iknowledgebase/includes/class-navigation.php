@@ -97,7 +97,7 @@ class IKnowledgebaseBase_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 		$small_class = ( $args['theme_location'] === 'bar-start' || $args['theme_location'] === 'bar-end' ) ? ' is-small' : '';
 
-		if ( defined( 'IKNOWLEDGEBASE_PRO' ) ) {
+		if ( class_exists( '\Iknowledgebase\WOWP_Plugin' ) ) {
 			$icon       = ! empty( $menu_meta['item-icon'] ) ? $menu_meta['item-icon'] : '';
 			$title_hide = ! empty( $menu_meta['title-hide'] ) ? $menu_meta['title-hide'] : '';
 		}
