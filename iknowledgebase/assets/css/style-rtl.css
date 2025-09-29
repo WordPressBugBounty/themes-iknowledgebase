@@ -9666,14 +9666,14 @@ a.has-text-primary:hover, a.has-text-primary:focus {
 
 .panel-block {
   overflow-wrap: break-word;
-  word-break: break-all;
+  word-break: break-word;
   -webkit-hyphens: auto;
   hyphens: auto;
 }
 
 .iknowledgebase_widget_current_nav a {
   overflow-wrap: break-word;
-  word-break: break-all;
+  word-break: break-word;
   -webkit-hyphens: auto;
   hyphens: auto;
 }
